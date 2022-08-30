@@ -86,10 +86,34 @@ a:hover {
   color: var(--hotmag);
   text-decoration:none;
 }
+.button {
+  background-color: var(--magenta);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--mono);
+  text-decoration: none;
+}
+.button:hover {
+  color: white;
+  background-color: var(--hotmag);
+  
+  
+}
+/*background color divs */
+.section-plum {
+  background-color: var(--plum);
+}
+.gradient {
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  height: 2px;
+}
 /*intro styles */
 
 #intro {
-  padding-bottom:10rem;
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin:0 auto ;
 }
 #intro p {
   font-size:1rem;
@@ -119,8 +143,10 @@ a:hover {
 #contact p:last-child {
     margin-top: 3rem;
 }
+/* footer section */
 footer {
     text-align:center;
+    padding: 4rem 0;
   }
 footer ul {
     list-style-type: none;
