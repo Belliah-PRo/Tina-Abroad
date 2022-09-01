@@ -226,7 +226,7 @@ footer ul {
   }
 }
 #projects ul {
-  justify-content:flex-end;
+  justify-content:flex-start;
 }
 
 
