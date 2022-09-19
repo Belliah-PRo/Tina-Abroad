@@ -13,6 +13,7 @@
     --pink: #D68CE1;
     --orange:#FE6F60;
     --red:#E65771;
+    --purple: #6A68A6;
     --lerp-0: 1;
     --lerp-1: 0.5787037;
     --lerp-2: 0.2962963;
@@ -110,6 +111,16 @@ a:hover {
   
 }
 /*background color divs */
+.section-purple {
+  background-color: var(--purple);
+  padding: 0 auto;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
 .section-plum {
   background-color: var(--plum);
 }
@@ -214,7 +225,7 @@ footer ul {
 }
 /*slider section*/
 .slider h2 {
-  font-size:5rem;
+  font-size: 48px;
   margin-bottom: calc(2.5rem *1.5);
   text-align: center;
 }
@@ -245,7 +256,7 @@ footer ul {
 
 
 .results:is(:hover, :focus-within) img {
-  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+  opacity: calc(0.7 + (var(--active-lerp, 0) * 0.9));
   filter: grayscale(calc(1 - var(--active-lerp, 0)));
 }
 
