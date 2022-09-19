@@ -13,6 +13,14 @@
     --pink: #D68CE1;
     --orange:#FE6F60;
     --red:#E65771;
+    --purple: #6A68A6;
+    --lerp-0: 1;
+    --lerp-1: 0.5787037;
+    --lerp-2: 0.2962963;
+    --lerp-3: 0.125;
+    --lerp-4: 0.037037;
+    --lerp-5: 0.0046296;
+    --lerp-6: 0;
 }
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
@@ -24,12 +32,14 @@ html {
     box-sizing: inherit;
 }
 body{
+  
   padding:0;
   margin:0;
   font-family: var(--sans);
   background-color: var(--black);
   color: var(--white);
   font-size: var(--font-size)
+  
 }
 /* NavBar */
 nav {
@@ -101,6 +111,16 @@ a:hover {
   
 }
 /*background color divs */
+.section-purple {
+  background-color: var(--purple);
+  padding: 0 auto;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
 .section-plum {
   background-color: var(--plum);
 }
@@ -203,6 +223,78 @@ footer ul {
   border-radius:25px;
   padding:1rem;
 }
+/*slider section*/
+.slider h2 {
+  font-size: 48px;
+  margin-bottom: calc(2.5rem *1.5);
+  text-align: center;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  min-height: 100vh;
+  margin: 1 auto;
+  padding: 0 ;
+
+}
+
+#slider img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.2s ease;
+    
+  }
+  .result {
+    padding: 0;
+  }
+
+
+
+
+.results:is(:hover, :focus-within) img {
+  opacity: calc(0.7 + (var(--active-lerp, 0) * 0.9));
+  filter: grayscale(calc(1 - var(--active-lerp, 0)));
+}
+
+
+li:is(:hover, :focus-within) {
+  --active-lerp: var(--lerp-0);
+  z-index: 7;
+}
+li:has() + li:is(:hover, :focus-within),
+li:is(:hover, :focus-within) + li {
+  --active-lerp: var(--lerp-1);
+  z-index: 6;
+}
+.result:has() + .result + .result:is(:hover, :focus-within),
+.result:is(:hover, :focus-within) + .result + .result {
+  --active-lerp: var(--lerp-2);
+  z-index: 5;
+}
+.result:has() + .result + .result + .result:is(:hover, :focus-within),
+.result:is(:hover, :focus-within) + .result + .result + .result {
+  --active-lerp: var(--lerp-3);
+  z-index: 4;
+}
+.result:has() + li + li + li + li:is(:hover, :focus-within),
+.result:is(:hover, :focus-within) + li + li + li + li {
+  --active-lerp: var(--lerp-4);
+  z-index: 3;
+}
+.result:has() + .result + .result + .result + .result + .result:is(:hover, :focus-within),
+.result:is(:hover, :focus-within) + .result + .result + .result + .result + .result {
+  --active-lerp: var(--lerp-5);
+  z-index: 2;
+}
+.result:has() + .result + .result + .result + .result + .result + .result:is(:hover, :focus-within),
+.result:is(:hover, :focus-within) + .result + .result + .result + .result + .result + .result {
+  --active-lerp: var(--lerp-6);
+  z-index: 1;
+}
 
 @media (min-width: 550px) {
   article {
@@ -240,4 +332,12 @@ footer ul {
     flex-basis: auto;
     text-align:left;
     
+}
+#slider {
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+#slider ul {
+  justify-content:flex-start;
 }
