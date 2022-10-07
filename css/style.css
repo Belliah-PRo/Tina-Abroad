@@ -197,6 +197,22 @@ background-color: var(--green);
   font-size: 4rem;
   font-weight:normal;
 }
+/* Weather Forcast*/
+.weather {
+  margin:0 auto;
+  padding:0 auto;
+  margin-bottom:-3rem;
+  width:215px;
+  height:300px; 
+}
+.weatherlink {
+  text-align:center;
+  margin:1.5rem;
+  font-family: var(--mono);
+  
+  
+}
+/* Weather Forcast*/
 /* contact section */
 #contact {
     
