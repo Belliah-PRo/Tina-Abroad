@@ -110,7 +110,7 @@ a:hover {
   color: var(--hotmag);
   text-decoration:none;
 }
-.button {
+.button1 {
   background-color: var(--magenta);
   color: white;
   padding: 0.5rem;
@@ -118,7 +118,7 @@ a:hover {
   font-family: var(--mono);
   text-decoration: none;
 }
-.button:hover {
+.button1:hover {
   color: white;
   background-color: var(--hotmag);
   
@@ -487,6 +487,22 @@ footer ul {
   padding: 8px 12px;
   top: 0;
 }
+/* back to the top button */
+button {
+  display: none;
+  cursor: pointer;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color:var(--purple);
+  
+}
+
+/* back to the top button */
 
 
 @keyframes fade {
@@ -544,4 +560,9 @@ footer ul {
   max-width: 1200px;
   margin:0 auto;
   text-align:center;
+}
+
+button {
+  margin: 30px;
+
 }
