@@ -26,6 +26,7 @@
     --green1: #AECFBA;
     --green2: #83AF93;
     --yellow : #FFCE00;
+    --blue : #0d1de3;
     --lerp-0: 1;
     --lerp-1: 0.5787037;
     --lerp-2: 0.2962963;
@@ -84,7 +85,7 @@ nav h1 [class*="fa-"]{
   font-size:120%;
   color: var(--red);
 }
-nav [class*="fa-"]{
+nav li  [class*="fa-"]{
   font-size:150%;
   color: var(--white);
 }
@@ -317,6 +318,10 @@ background-color: var(--green);
   background: linear-gradient( rgba(171,114,106,1) 100%);
   height: 2px;
 }
+.gradient2 {
+  background: rgb(147,32,218);
+  background: linear-gradient(90deg, rgba(147,32,218,1) 0%, rgba(227,225,13,1) 100%);
+}
 /*intro styles */
 
 #intro {
@@ -492,13 +497,13 @@ button {
   display: none;
   cursor: pointer;
   position: fixed; 
-  bottom: 20px;
-  right: 30px;
+  bottom: 10px;
+  right: 25px;
   z-index: 99;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  background-color:var(--purple);
+  border-radius: 25%;
+  background:linear-gradient(90deg, rgba(147,32,218,1) 0%, rgba(227,225,13,1) 100%);
   
 }
 
@@ -563,6 +568,6 @@ button {
 }
 
 button {
-  margin: 30px;
+  margin: 25px;
 
 }
