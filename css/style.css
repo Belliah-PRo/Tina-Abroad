@@ -241,11 +241,11 @@ a:hover {
 }
 
 .logo {
+  display: block;
   text-align: center;
-  margin: -0.5rem;
-  margin-top: 0.5rem;
-  padding: 0 auto;
-  font-size: 1.2rem;
+  width: 100%;
+  
+  
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -327,7 +327,8 @@ background-color: var(--green);
 #intro {
   padding: 4rem 1rem 10rem 1rem;
   max-width: 1200px;
-  margin:0 auto ;
+  margin:-10rem auto ;
+  margin-bottom: -5rem;
 }
 #intro p {
   font-size:1rem;
@@ -563,7 +564,7 @@ button {
 }
 #google {
   max-width: 1200px;
-  margin:0 auto;
+  margin:11rem auto;
   text-align:center;
 }
 
