@@ -1,5 +1,6 @@
 /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
+    --grey:  #B8BACC;
     --black: #171321;
     --dkblue: #0d314b;
     --plum: #4b0d49;
@@ -10,18 +11,19 @@
     --font-size: 1.3rem;
     --mono: "Oxygen mono", monospace;
     --sans: Oxygen, sans-serif;
-    --pink: #D68CE1;
+    --pink: #FDE7EA;
+    --pink1: #FF8E9A;
     --orange:#FE6F60;
     --red:#E65771;
     --purple: #6A68A6;
     --brown: #734439;
     --salmon: #FBB1A6;
     --cream: #FFD6D1;
-    --peach: #F7BAB2;
+    --peach: #FFBBB3;
     --green: #59AB83;
     --lightgreen: #B2F7D5;
     --peach1: #FCB1A7;
-    --peach2: #FFD9CC;
+    --peach2: #E8A2AB;
     --peach3: #FFEEE6;
     --green1: #AECFBA;
     --green2: #83AF93;
@@ -87,7 +89,7 @@ nav h1 [class*="fa-"]{
 }
 nav li  [class*="fa-"]{
   font-size:150%;
-  color: var(--white);
+  color: var(--black);
 }
 nav a {
 color: var(--white);
@@ -98,7 +100,7 @@ nav a:hover {
   color: var(--orange);
 }
  nav [class*="fa-"]:hover {
-   color: var(--orange);
+   color: var(--grey);
 }
 h1, h2, h3 {
  margin:0; 
@@ -156,7 +158,7 @@ a:hover {
 
 .navbar .nav-container a {
   text-decoration: none;
-  color: var(--yellow);
+  color: var(--black);
   border: solid red 0px;
   font-weight: bold;
   font-size: 1.5rem;
@@ -206,7 +208,7 @@ a:hover {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: var(--aqua)
+  background: var(--dkblue)
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -225,7 +227,7 @@ a:hover {
 
 .navbar .menu-items {
   padding-top: -2rem;
-  background-color: var(--black);
+  background-color: var(--pink);
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
@@ -278,6 +280,11 @@ a:hover {
   position: relative;
   width: 100%;
 }
+
+.section-white {
+  background-color: var(--white);
+}
+
 .section-peach2 {
   background-color: var(--peach2);
 }
@@ -340,7 +347,7 @@ background-color: var(--green);
 .name span {
   font-family: var(--sans);
   font-size:4rem;
-  color: var(--aqua);
+  color: var(--pink1);
   display:block;
 }
 #intro h2{
