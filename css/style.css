@@ -283,6 +283,7 @@ a:hover {
 
 .section-white {
   background-color: var(--white);
+  
 }
 
 .section-peach2 {
@@ -508,10 +509,10 @@ button {
   bottom: 10px;
   right: 25px;
   z-index: 99;
-  width: 60px;
-  height: 60px;
-  border-radius: 25%;
-  background:linear-gradient(90deg, rgba(147,32,218,1) 0%, rgba(227,225,13,1) 100%);
+  width:30px;
+  height: 35px;
+  border-radius: 60%;
+  background:var(--pink);
   
 }
 
