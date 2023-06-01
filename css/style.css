@@ -243,9 +243,11 @@ a:hover {
 }
 
 .logo {
-  display: block;
-  text-align: center;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  
   
   
 }
