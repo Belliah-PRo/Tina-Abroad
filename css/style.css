@@ -52,8 +52,11 @@ body{
   
   padding:0;
   margin:0;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 40px;
   font-family: var(--sans);
-  background-color: var(--black);
+  background-color: var(--peach3);
   color: var(--black);
   font-size: var(--font-size)
   
@@ -243,9 +246,10 @@ a:hover {
 }
 
 .logo {
+  width: 1px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -2.8rem;
+  right: 10%;
   
   
   
