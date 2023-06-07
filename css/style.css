@@ -52,8 +52,8 @@ body{
   
   padding:0;
   margin:0;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-top: 40px;
   font-family: var(--sans);
   background-color: var(--peach3);
@@ -249,7 +249,7 @@ a:hover {
   width: 1px;
   position: absolute;
   top: -2.8rem;
-  right: 10%;
+  right: 26%;
   
   
   
