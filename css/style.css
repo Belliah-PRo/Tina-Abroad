@@ -117,7 +117,7 @@ a:hover {
   text-decoration:none;
 }
 .button1 {
-  background-color: var(--magenta);
+  background-color: var(--green1);
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
@@ -126,7 +126,7 @@ a:hover {
 }
 .button1:hover {
   color: white;
-  background-color: var(--hotmag);
+  background-color: var(--orange);
   
 }
 
